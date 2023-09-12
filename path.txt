@@ -1,0 +1,45 @@
+import fs from "fs";
+import path from "path";
+
+// fs.mkdir("./Newclass" , (error):void =>{
+//     if(error){
+//         console.log("an error in creating folder" , error)
+//     }else{
+//         console.log("Folder created successfully")
+//     }
+// })
+
+const newMsg = "Help me Buy Food";
+// fs.writeFile(path.join(__dirname , "Newclass" ,"OldFile.txt"),newMsg, (error):void=>{
+//     if(error){
+//         console.log("Error writing a file", error);
+//     }else{
+//         console.log("New File Added")
+//     }
+
+//     const newMsg2 = "\nBuy snacks for joan"
+
+//     fs.appendFile(path.join(__dirname , "Newclass", "OldFile.txt") , newMsg2 , (error):void=>{
+//         if(error){
+//             console.log("AN error in appending file", error)
+//         }else{
+//             console.log("New File Appended")
+//         }
+//     })
+// })
+
+const newMsg2 = "\nBuy snacks for joan";
+
+setInterval(() => {
+  fs.appendFile(
+    path.join(__dirname, "Newclass", "OldFile.txt"),
+    newMsg2,
+    (error) => {
+      if (error) {
+        console.log("AN error in appending file", error);
+      } else {
+        console.log("New File Appended");
+      }
+    }
+  );
+}, 3000);

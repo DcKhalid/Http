@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+</head>
+<body>
+    <div class="Container">
+        <div class="header">
+            <div class="logo">My logo</div>
+            <div class="nav">
+                <div class="navs"><a href="home.html">Home</a></div>
+                <div class="navs"><a href="about.html">About</a></div>
+                <div class="navs"><a href="features.html">eatures</a></div>
+                <div class="navs"><a href="contact.html">Contact</a></div>
+            </div>
+        <div class="buttonHolder">
+            <div class="button">Log In</div>
+            <div class="button2">Sign Up</div>
+        </div>
+        </div>
+    </div>
+    <style>
+*{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.Container{
+    width: 100%;
+    height: 100vh;
+    background-color: aqua;
+}
+
+.header{
+    width: 100%;
+    height: 8vh;
+    background-color: blue;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    display: space-between;
+    align-items: center;
+}
+.logo{
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    color:crimson;
+    display: flex;
+    margin-left: 10px;
+}
+.nav{
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    display: flex;
+    margin-left: 30%;
+}
+.navs{
+    padding-left: 20px;
+}
+.buttonHolder{
+    display: flex;
+    margin-left: 20%;
+}
+.button{
+    width: 100px;
+    height: 30px;
+    border: 1px solid silver;
+    color: white;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.button2{
+    margin-left: 10px;
+    width:100px;
+    height: 30px;
+    border-radius: 8px;
+    background-color: orange;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+    </style>
+</body>
+</html>
